@@ -1,0 +1,22 @@
+Enter Account ID 
+<input type="text" #accId>
+
+
+<button (click)="doGetAccountInfo(accId.value)"> Load Account</button>
+<hr/>
+
+<div *ngIf="isDataFetched == true">
+    Account Number {{accountdto.accountNumber}}
+    <br/>
+    username {{accountdto.username}}
+    <br/>
+    balance {{accountdto.balance}}
+    <br/>
+    Name {{accountdto.firstName}} {{accountdto.lastName}}
+    <br/>
+    PanCard {{accountdto.panCard}} Phone Number {{accountdto.phoneNumber}}  
+    <br/>
+
+
+</div>
+
